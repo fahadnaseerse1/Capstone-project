@@ -1,0 +1,250 @@
+:root {
+  --night: #0f1b2d;
+  --shirt: #8fb0dc;
+  --mist: #eef3fa;
+  --amber: #e8a33d;
+  --ink: #17233a;
+  --muted: #5b6b85;
+  --radius: 14px;
+  --font-display: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--mist);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+}
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+}
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+}
+h3 {
+  font-size: 1.2rem;
+}
+p {
+  max-width: 62ch;
+  margin: 0 0 1em;
+}
+
+.container {
+  width: min(1060px, 92%);
+  margin-inline: auto;
+}
+.section {
+  padding: 4.5rem 0;
+}
+.section--dark {
+  background: var(--night);
+  color: var(--mist);
+}
+
+.site-header {
+  background: var(--night);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 2rem;
+  padding: 0.9rem 0;
+}
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--mist);
+  text-decoration: none;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-display);
+}
+.nav__link {
+  color: var(--shirt);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+.nav__link:hover,
+.nav__link--current {
+  color: #fff;
+  border-bottom: 2px solid var(--amber);
+}
+
+.hero {
+  background: var(--night);
+  color: var(--mist);
+  padding: 4rem 0 5rem;
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.hero__lead {
+  font-size: 1.3rem;
+  color: #c9d8ee;
+}
+.hero__photo {
+  border-radius: 50% 50% var(--radius) var(--radius);
+  border: 6px solid var(--amber);
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.btn {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  margin: 0.4rem 0.6rem 0.4rem 0;
+}
+.btn--primary {
+  background: var(--amber);
+  color: var(--night);
+}
+.btn--ghost {
+  border: 2px solid var(--shirt);
+  color: var(--mist);
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  border-top: 5px solid var(--shirt);
+}
+.card:nth-child(2) {
+  border-top-color: var(--amber);
+}
+.card__tag {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.interests {
+  padding-left: 1.2rem;
+}
+
+.entry {
+  border-left: 3px solid var(--amber);
+  padding-left: 1.4rem;
+  margin-bottom: 2rem;
+}
+.entry__meta {
+  font-family: var(--font-display);
+  color: var(--muted);
+  margin: 0 0 0.4rem;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skills li {
+  background: var(--night);
+  color: var(--mist);
+  font-family: var(--font-display);
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.contact-list li {
+  margin-bottom: 0.6rem;
+}
+.section--dark a {
+  color: var(--amber);
+}
+
+.site-footer {
+  background: var(--night);
+  color: var(--shirt);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .hero__inner,
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .hero__photo {
+    max-width: 320px; margin-inline: auto;
+  }
+  .section {
+    padding: 3rem 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

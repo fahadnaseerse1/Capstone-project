@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fahad Naseer | Personal Website</title>
+    <meta
+      name="description"
+      content="Personal website of Your Name: skills, projects and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html">Fahad Naseer</a>
+        <nav class="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link nav__link--current" href="index.html">Home</a>
+            </li>
+            <li><a class="nav__link" href="resume.html">Resume</a></li>
+            <li>
+              <a class="nav__link" href="index.html#projects">Projects</a>
+            </li>
+            <li><a class="nav__link" href="index.html#about">About</a></li>
+            <li><a class="nav__link" href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__inner">
+          <div>
+            <h1>Hi, I'm Fahad Naseer.</h1>
+            <p class="hero__lead">
+              I'm a Web Developer who builds clear, accessible things. With a
+              solid foundation in  odern front-end technologies, i am looking
+            to bring my skills to a forward-thinking development team. </p>
+            <a class="btn btn--primary" href="resume.html">View my resume</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+          <img
+            class="hero__photo"
+            src="images/profile.jpg"
+            alt="Portrait of me wearing a light blue kurta with my arms crossed, outdoors in the evening"
+            width="800"
+            height="800"
+          />
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Projects</h2>
+          <div class="grid">
+            <article class="card">
+              <p class="card__tag">HTML &amp; CSS</p>
+              <h3>Capstone Project 1</h3>
+              <p>
+                A one-page resume that lists my education, experience and
+                skills. I used semantic HTML and clean CSS so it's easy to read
+                on any screen.
+              </p>
+            </article>
+            <article class="card">
+              <p class="card__tag">Responsive Design</p>
+              <h3>Landing Page</h3>
+              <p>
+                A mobile-friendly landing page with a hero banner, feature
+                section and call-to-action button. Built with CSS Flexbox and
+                Grid, with no JavaScript.
+              </p>
+              <a href="#https://fahadnaseerse1.github.io/digital-bank-page/"
+                >View project</a
+              >
+            </article>
+            <article class="card">
+              <p class="card__tag">Accessibility</p>
+              <h3>Photo Gallery</h3>
+              <p>
+                A responsive photo gallery with a clean layout and intuitive
+                navigation. Built with semantic HTML and accessible CSS.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section--dark"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="container about">
+          <div>
+            <h2 id="about-title">About me</h2>
+            <p>
+              I'm a passionate web developer with a keen eye for detail and a
+              love for creating engaging user experiences. I specialize in
+              building responsive and accessible websites using modern HTML,
+              CSS, and JavaScript techniques.
+            </p>
+            <p>
+              I like solving problems, learning new tools and working with
+              people. My goal is to build a career in web development and create
+              websites that look good and work well for everyone.
+            </p>
+          </div>
+          <div>
+            <h3>Interests</h3>
+            <ul class="interests">
+              <li>Web development</li>
+              <li>Photography</li>
+              <li>Travel</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact me</h2>
+          <p>Want to work together or just say hello? Reach me here.</p>
+          <ul class="contact-list">
+            <li>
+              Email:
+              <a href="fahadkhokhar097@gmail.com">fahadkhokhar097@gmail.com</a>
+            </li>
+            <li>Phone: <a href="tel:+923139400130">+92 313 9400130</a></li>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/fahad-naseer-se"
+                >linkedin.com/in/fahad-naseer-se</a
+              >
+            </li>
+            <li>Location: Lahore, Pakistan</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p style="margin: 0 auto">
+        &copy; 2026 Fahad Naseer. Built with HTML and CSS.
+      </p>
+    </footer>
+  </body>
+</html>
